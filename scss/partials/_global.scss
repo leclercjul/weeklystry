@@ -11,3 +11,17 @@ h6 {
   @include body-font;
   font-weight: 700;
 }
+
+hr {
+  border-color: $primary;
+  border-width: 2px;
+}
+
+.bg-primary-light {
+  background-color: rgba(255, 189, 89, .9);
+  color: $white;
+
+  hr {
+    border-color: $white;
+  }
+}
