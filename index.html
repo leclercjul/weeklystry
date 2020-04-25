@@ -66,7 +66,12 @@
               </div>
             </div>
           </form>
-          <div id="mce-responses" class="clear text-left">
+          <p class="text-left small mt-2">
+            En renseignant votre email, vous acceptez de recevoir chaque semaine nos dernières stories
+            par courrier électronique.
+            <a href="#" class="text-primary small" data-toggle="tooltip" data-placement="top" title="Vous pouvez vous désinscrire à tout moment en utilisant les liens de désinscription ou en entrant de nouveau votre adresse email dans le formulaire et en suivant les instructions reçues par email.">Plus d'informations</a>.
+          </p>
+          <div id="mce-responses" class="clear text-left small">
             <div class="response" id="mce-error-response" style="display:none"></div>
             <div class="response" id="mce-success-response" style="display:none"></div>
           </div>
@@ -79,6 +84,10 @@
             fnames[0]='EMAIL';
             ftypes[0]='email';
           }(jQuery));
+
+          $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+          });
 
           var $mcj = jQuery.noConflict(true);
           $.extend($.validator.messages, {
